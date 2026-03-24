@@ -12,6 +12,9 @@ class Plt < Formula
     libexec.install "container-run.sh"
     (libexec/"scripts").install Dir["scripts/*"]
     libexec.install "bin/plt" => "plt-exec"
+    chmod 0755, libexec/"container-run.sh"
+    chmod 0755, libexec/"plt-exec"
+    (libexec/"scripts").children.each { |f| chmod 0755, f }
 
     (bin/"plt").write <<~BASH
       #!/bin/bash
