@@ -1,8 +1,8 @@
 class Plt < Formula
   desc "Self-hosted LanguageTool in an Apple container with no internet access"
   homepage "https://github.com/alc0der/languagetool"
-  url "https://github.com/alc0der/languagetool/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "c9135aef20c3708e7addb6cb7560caa5afa4e43ed010f0bd2e00c00f8714c3ec"
+  url "https://github.com/alc0der/languagetool/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "2310d04137d2cd74347433d361f4337469bed7bcac48033196dd9bab99e38ff4"
   license "MIT"
   head "https://github.com/alc0der/languagetool.git", branch: "main"
 
