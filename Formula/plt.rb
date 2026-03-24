@@ -10,7 +10,7 @@ class Plt < Formula
 
   def install
     libexec.install "container-run.sh"
-    (libexec/"scripts").install Dir["scripts/*"]
+    (libexec/"scripts").install "scripts/download-ngrams.sh"
     libexec.install "bin/plt" => "plt-exec"
     chmod 0755, libexec/"container-run.sh"
     chmod 0755, libexec/"plt-exec"
