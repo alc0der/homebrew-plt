@@ -46,6 +46,9 @@ class Plt < Formula
         brew services start plt
 
       LanguageTool will be available at http://localhost:8010
+
+      Before uninstalling, remove the container:
+        plt uninstall
     EOS
   end
 end
