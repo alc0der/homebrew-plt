@@ -1,8 +1,8 @@
 class Plt < Formula
   desc "Self-hosted LanguageTool in an Apple container with no internet access"
   homepage "https://github.com/alc0der/languagetool"
-  url "https://github.com/alc0der/languagetool/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "2310d04137d2cd74347433d361f4337469bed7bcac48033196dd9bab99e38ff4"
+  url "https://github.com/alc0der/languagetool/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "6d64b0b1ee9a7109f8f5a1a8dc18c738ca7f5bdafd9e8f337981cf19f2cfeefc"
   license "MIT"
   head "https://github.com/alc0der/languagetool.git", branch: "main"
 
@@ -37,7 +37,7 @@ class Plt < Formula
 
   def caveats
     <<~EOS
-      Requires Apple's container CLI (/usr/local/bin/container).
+      Requires Apple's container CLI (brew install container).
 
       First-time setup (optional):
         plt download-ngrams  # ~1.6 GB, enables extra grammar checks
